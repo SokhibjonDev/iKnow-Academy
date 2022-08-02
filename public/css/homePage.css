@@ -1,0 +1,473 @@
+/* ===== HEADER STARTED ===== */
+nav {
+    box-shadow: 0 0 7px 1px #2c2c2c;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999999999999;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+nav ul li a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav ul .active {
+    transform: translateY(4px) !important;
+}
+
+nav ul .active::after {
+    content: '';
+    display: block;
+    opacity: 0;
+    background: rgb(188, 0, 0);
+    width: 100%;
+    height: 2px;
+    margin-left: -100%;
+    transition: .3s;
+    margin-top: 5px;
+}
+
+nav ul .active:hover.active::after {
+    content: '';
+    display: block;
+    opacity: 1;
+    margin-left: 0;
+}
+
+.logo {
+    color: rgba(179, 0, 0, 0.7);
+    font-weight: 700;
+    font-family: serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+/* navbar success  */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    padding-top: 100px;
+}
+
+.titleInfo {
+    margin-top: 200px;
+    width: 700px;
+}
+
+.titleInfo h1 {
+    font-size: 62px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.titleInfo h1 span {
+    background: rgb(188, 0, 0);
+    color: #fff;
+    padding: 0 10px;
+}
+
+.titleInfo p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.titleInfo button {
+    padding: 17px 40px;
+    color: #fff;
+    background: rgb(188, 0, 0);
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.titleInfo button:hover .arrow {
+    margin-left: 10px;
+    opacity: 1;
+}
+
+.titleInfo button .arrow {
+    transition: .4s;
+    width: 25px;
+    margin-left: -25px;
+    opacity: 0;
+}
+
+.titleImg img {
+    width: 450px;
+    margin-top: 100px;
+    border-radius: 50%;
+}
+
+.titleImg .radius {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: rgba(179, 0, 0, 0.7);
+    border-radius: 50%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    bottom: 270px;
+
+}
+
+/* ===== IELTS STARTED */
+.down {
+    position: absolute;
+    bottom: 50px;
+    transform: rotate(90deg);
+    margin-left: 35%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: rgb(124, 0, 0);
+}
+
+.for-ielts {
+    background: rgb(172, 1, 1);
+    height: 114.5vh;
+    border-top-right-radius: 40%;
+    border-top-left-radius: 40%;
+    padding: 25px 0;
+}
+
+.ieltsTitle {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 42px;
+    margin-top: 100px;
+}
+
+.ieltsInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fst-half,
+.snd-half {
+    width: 600px;
+    margin-top: 70px;
+}
+
+.fst-half .line {
+    width: 1px;
+    height: 600px;
+    background: #fff;
+    margin-left: 350px;
+    margin-top: 20px;
+}
+
+.fst-half .lines {
+    height: 500px;
+    margin-left: 300px;
+    bottom: -720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.fst-half .lines .min-line {
+    width: 100px;
+    height: 1px;
+    background: #fff;
+}
+
+.fst-half .lines .min-line:nth-child(1),
+.fst-half .lines .min-line:nth-child(3),
+.fst-half .lines .min-line:nth-child(5),
+.fst-half .lines .min-line:nth-child(7) {
+    margin-left: -50px;
+    color: #fff;
+}
+
+.fst-half .lines .min-line:nth-child(2),
+.fst-half .lines .min-line:nth-child(4),
+.fst-half .lines .min-line:nth-child(6) {
+    margin-left: 50px;
+    color: #fff;
+}
+
+.lines p {
+    padding: 10px 10px 20px 10px;
+}
+
+.aboutIeltsTitle {
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.snd-half p {
+    color: #fff;
+    line-height: 23px;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.prev {
+    margin-left: -65px;
+}
+
+.upper {
+    margin-left: -75px;
+}
+
+.pro {
+    margin-left: -10px;
+}
+
+.min-line h1 {
+    position: absolute;
+    margin-top: -45px;
+    width: 200px;
+}
+
+.min-line:nth-child(1) h1,
+.min-line:nth-child(3) h1,
+.min-line:nth-child(5) h1,
+.min-line:nth-child(7) h1 {
+    margin-left: 130px;
+}
+
+.min-line:nth-child(2) h1,
+.min-line:nth-child(4) h1,
+.min-line:nth-child(6) h1 {
+    margin-left: -120px;
+}
+
+/* ===== TEACHER STARTED */
+.for-teacher {
+    height: 95vh;
+}
+
+.teacherTitle {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 42px;
+    padding-top: 90px;
+}
+
+.teacherInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information {
+    width: 900px;
+    margin-top: 70px;
+}
+
+.information h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.information span {
+    background: rgb(172, 1, 1);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 8px 2px;
+}
+
+.information p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.links {
+    width: 400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    color: rgb(172, 1, 1);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.cart {
+    margin-top: 150px;
+    width: 500px;
+    margin-left: 400px;
+}
+
+.grey {
+    width: 450px;
+    height: 400px;
+    background: rgba(164, 0, 0, 0.855);
+}
+
+.shablon {
+    position: absolute;
+    background: rgba(64, 18, 108, 0.5);
+    width: 420px;
+    height: 370px;
+    margin-top: -30px;
+    margin-left: -30px;
+    transition: .2s;
+    overflow: hidden;
+}
+
+.logotype {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 0 10px;
+}
+
+.logotype h3 {
+    font-size: 28px;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.logotype span {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.logotype .img {
+    width: 50px;
+}
+
+.shablon:hover {
+    width: 480px;
+    height: 430px;
+    box-shadow: 5px 5px 20px 1px rgb(124, 0, 0);
+}
+
+.cart-info {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    background: #0000004d;
+    backdrop-filter: blur(3px);
+    padding: 30px;
+    width: 340px;
+    transform: translateY(120px);
+    transition: 0.3s;
+    font-size: 24px;
+}
+
+.cart-info a {
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+.shablon:hover .cart-info {
+    transform: translateY(0);
+}
+
+/* ===== LESSONS STARTED ===== */
+.forLessonInfo {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.forLessonInfo img {
+    width: 100%;
+    filter: saturate(0);
+    transition: .3s;
+}
+
+.for-lesson .lessonInfo::after {
+    content: '';
+    display: none;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(180deg, transparent, rgb(124, 0, 0));
+    transform: translateY(-230px);
+}
+
+.for-lesson .lessonInfo:hover img {
+    filter: saturate(100%);
+}
+
+.for-lesson .lessonInfo:hover::after {
+    display: block;
+}
+
+.lessonTitle {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.lessonTitle h1 {
+    text-transform: uppercase;
+    margin: 0 auto 100px;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.positionH2 {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+    margin-top: 190px;
+}
+
+.positionH2 h2 {
+    text-transform: uppercase;
+    font-size: 42px;
+}
+
+.positionH2 h2:last-child {
+    margin-left: 4%;
+}
+
+.fillials {
+    margin-top: -105px;
+}
+
+/* ===== FOOTER STARTED ===== */
+footer {
+    background: rgb(172, 1, 1);
+    padding: 40px 0 70px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px 1px #1c1c1c;
+}
+
+footer ul li a {
+    color: #fff;
+    line-height: 25px;
+}
+
+footer ul h5 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
