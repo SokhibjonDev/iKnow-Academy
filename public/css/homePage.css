@@ -390,6 +390,10 @@ nav ul .active:hover.active::after {
     transition: 0.3s;
     font-size: 24px;
 }
+.half-life-1,
+.half-life-2{
+    width: 43%;
+}
 
 .cart-info a {
     color: #fff;

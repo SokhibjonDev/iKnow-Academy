@@ -24,3 +24,16 @@ window.addEventListener(
         }
     }
 );
+window.addEventListener(
+    "scroll",
+    function scrollBar() {
+        if (window.scrollY > 280) {
+            document.querySelector(".fst-half").style.opacity = "1 !important";
+
+        } else {
+            document.querySelector(".fst-half").style.opacity = "0";
+            document.querySelector(".fst-half").style.transition = "1.3s";
+        }
+    }
+);
+
