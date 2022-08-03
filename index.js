@@ -21,8 +21,18 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 const homePage = require("./router/homePage");
+const ieltsPage = require("./router/ieltsPage");
+const teacherPage = require("./router/teacherPage");
+const lessonPage = require("./router/lessonPage");
+const coworkingPage = require("./router/coworkingPage");
+const fillialsPage = require("./router/fillialsPage");
 
 app.use("/", homePage);
+app.use("/ielts", ieltsPage);
+app.use("/teacher", teacherPage);
+app.use("/lesson", lessonPage);
+app.use("/coworking", coworkingPage);
+app.use("/fillials", fillialsPage);
 
 try {
   const port = normalizePort(process.env.port || 3000);
