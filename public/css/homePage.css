@@ -1,6 +1,6 @@
 /* ===== HEADER STARTED ===== */
 nav {
-    box-shadow: 0 0 7px 1px #2c2c2c;
+    /* box-shadow: 0 0 7px 1px #2c2c2c; */
     display: flex;
     align-items: center;
     width: 100%;
@@ -115,18 +115,36 @@ nav ul .active:hover.active::after {
     width: 450px;
     margin-top: 100px;
     border-radius: 50%;
+    box-shadow: -15px 5px 30px 1px #1c1c1c;
 }
 
 .titleImg .radius {
     display: block;
     width: 200px;
     height: 200px;
-    background: rgba(179, 0, 0, 0.7);
+    background: rgba(187, 0, 0, 0.915);
     border-radius: 50%;
     position: absolute;
     backdrop-filter: blur(5px);
-    bottom: 270px;
+    left: 10px;
+    bottom: 200px;
+    animation: animate 10s infinite ease-out;
+    z-index: -1;
+    box-shadow: -15px 5px 60px 1px #1c1c1c;
+}
 
+@keyframes animate {
+    0% {
+        transform: rotate(0deg) translateY(0) translateX(0px);
+    }
+
+    50% {
+        transform: translateY(30px) translateX(50px);
+    }
+
+    100% {
+        transform: rotate(360deg) translateY(0px) translateX(0px);
+    }
 }
 
 /* ===== IELTS STARTED */
@@ -382,6 +400,12 @@ nav ul .active:hover.active::after {
     transform: translateY(0);
 }
 
+.images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* ===== LESSONS STARTED ===== */
 .forLessonInfo {
     display: flex;
@@ -391,7 +415,7 @@ nav ul .active:hover.active::after {
 .forLessonInfo img {
     width: 100%;
     filter: saturate(0);
-    transition: .3s;
+    transition: .5s;
 }
 
 .for-lesson .lessonInfo::after {
@@ -418,10 +442,11 @@ nav ul .active:hover.active::after {
     margin: auto;
 }
 
-.lessonTitle h1 {
+.for-lesson h1 {
     text-transform: uppercase;
     margin: 0 auto 100px;
     font-size: 35px;
+    text-align: center;
     letter-spacing: 2px;
 }
 
@@ -432,13 +457,16 @@ nav ul .active:hover.active::after {
     justify-content: space-around;
     margin-left: 50%;
     transform: translate(-50%);
-    color: #fff;
     margin-top: 190px;
 }
 
-.positionH2 h2 {
+
+
+.positionH2 a {
+    color: #fff;
     text-transform: uppercase;
     font-size: 42px;
+    display: none;
 }
 
 .positionH2 h2:last-child {
@@ -470,4 +498,24 @@ footer ul h5 {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
+}
+
+.more {
+    background: rgb(172, 1, 1);
+    color: #fff;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    position: absolute;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+.more:hover {
+    box-shadow: 0 0 10px 1px rgb(172, 1, 1);
+    transform: scale(1.050);
 }
