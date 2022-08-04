@@ -9,6 +9,11 @@ nav {
     z-index: 9999999999999;
 }
 
+
+.menu {
+    display: none;
+}
+
 nav ul {
     display: flex;
     align-items: center;
@@ -390,9 +395,17 @@ nav ul .active:hover.active::after {
     transition: 0.3s;
     font-size: 24px;
 }
+
 .half-life-1,
-.half-life-2{
+.half-life-2 {
     width: 43%;
+}
+
+.nth-2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .cart-info a {

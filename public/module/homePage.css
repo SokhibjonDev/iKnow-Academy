@@ -1,4 +1,8 @@
 @media (max-width: 1440px) {
+    .menu {
+        display: none;
+    }
+
     nav {
         width: 1440px;
         margin: auto;
@@ -91,6 +95,10 @@
 }
 
 @media(max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
     .container {
         width: 1024px;
     }
@@ -215,6 +223,10 @@
 }
 
 @media (max-width:992px) {
+    .menu {
+        display: none;
+    }
+
     nav {
         width: 992px;
         margin: auto;
@@ -251,5 +263,229 @@
 
     .images {
         width: 982px;
+    }
+}
+
+@media(max-width:768px) {
+    .menu {
+        display: none;
+    }
+
+    .container {
+        width: 768px;
+    }
+
+    nav {
+        width: 768px;
+        margin: auto;
+    }
+
+    nav ul {
+        width: 665px;
+        margin: auto;
+    }
+
+    nav ul .active {
+        margin-top: -7px;
+    }
+
+    .titleInfo p {
+        font-size: 19px;
+    }
+
+    .titleImg img {
+        position: absolute;
+        transform: translateX(-605px);
+        margin-top: 392px;
+    }
+
+    .titleImg .radius {
+        left: -653px;
+        bottom: 157px;
+    }
+
+    .for-ielts {
+        border-top-right-radius: 0%;
+        border-top-left-radius: 0%;
+    }
+
+    .ieltsTitle {
+        margin-left: 25%;
+    }
+
+    .fst-half .line {
+        margin-left: 310px;
+    }
+
+    .fst-half .lines {
+        margin-left: 260px;
+    }
+
+    .aboutIeltsTitle {
+        margin-left: 18px;
+        font-size: 38px;
+    }
+
+    .aboutIeltsTitle {
+        margin-left: 111px;
+    }
+
+    .snd-half p {
+        margin-right: -40px;
+        margin-left: -28px;
+        text-align: center;
+    }
+
+    .nth-2 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: auto;
+        margin-right: 235px;
+        height: 272px;
+        margin-top: 70px;
+    }
+
+    .nth-2:last-child {
+        margin-top: 100px;
+    }
+
+    .teacherTitle {
+        margin-right: 200px;
+    }
+
+    .teacherInfo {
+        flex-direction: column;
+    }
+
+    .for-teacher {
+        height: 125vh;
+    }
+
+    .cart {
+        margin-left: 185px;
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }
+
+    .information {
+        order: 1;
+        text-align: center;
+        margin-left: 150px;
+    }
+
+    .links {
+        margin-left: 45px;
+    }
+
+
+}
+
+@media (max-width:576px) {
+    .container {
+        width: 576px;
+    }
+
+    nav {
+        width: 576px;
+    }
+
+    nav ul {
+        width: 530px;
+        justify-content: space-between;
+    }
+
+    .menu {
+        background: transparent;
+        border: none;
+        display: block;
+    }
+
+    .menu img {
+        width: 30px;
+    }
+
+    .titleInfo p {
+        width: 500px;
+    }
+
+
+    .bar {
+        display: none;
+    }
+
+    .titleImg {
+        display: none;
+    }
+
+    .ieltsTitle {
+        margin-left: 17%;
+    }
+
+    .down {
+        margin-left: 43%;
+    }
+
+    .snd-half p {
+        margin-right: 71px;
+        margin-left: 91px;
+    }
+
+    .for-ielts {
+        height: 185.5vh;
+    }
+
+    .images {
+        width: 495px;
+        justify-content: space-between;
+        margin-left: 55px
+    }
+
+    .nth-2 {
+        margin-right: 150px;
+    }
+
+    .information {
+        margin-left: 50px;
+    }
+
+    .teacherTitle {
+        margin-right: 0px;
+    }
+
+    .cart {
+        margin-left: 95px;
+    }
+
+    .for-lesson h1 {
+        margin-top: 50px;
+    }
+
+    footer .container {
+        width: 576px;
+    }
+
+    .half-life-1,
+    .half-life-2 {
+        width: 716px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .container,
+    nav .container,
+    footer .container {
+        width: 425px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .titleInfo h1 {
+        font-size: 52px;
+        width: 400px;
     }
 }
